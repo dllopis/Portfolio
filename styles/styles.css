@@ -1,57 +1,108 @@
-* {
+/* Prevent highlighting of text when clicking on elements. Credit: stackoverflow-user/tw16 */
+*:before, *:after, * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
 }
 
 #landing-page-wrapper  {
     display:flex;
-    flex-direction: column;
-    height:100vh;
-    width:100vw;
+    flex-direction:column;
+    min-height:100vh;
     border:7px double black;
     border-color: yellowgreen;
 }
 
-#header-message {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    border: 1px solid black;
-    background-color:yellow;
-    padding: 10px;
-}
-#landing-content    {
-    display:flex;
-    flex-direction: column;
+#landing-image  {
+    flex:10;
+    border:1px solid black;
+    background: url('../images/ninja-2.png') no-repeat; /* fallback */
+    background: url('../images/ninja-2.png') no-repeat, linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background-size:contain;
+    background-position: center;
+
 }
 
-#landing-image  {
-    flex: 1;
-    background: url('../images/ninja-2.png') no-repeat;
-    background-size:contain;
+#landing-content    {
+    flex:1;
+    display:flex;
+    border:1px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background: #F7971E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #landing-content > div   {
-    flex: 1;
+    width:60%;
     padding: 0 .5em;
     margin: 0 .5em .5em;
     border: 5px double black;
+    border-radius: 2em;
     border-color: gray;
     color:black;
     text-align: center;
     line-height: auto;
     font-size: 1.5em;
-    background: #FFEFBA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     overflow: hidden;
+}
+
+#landing-content > div:hover    {
+    background: rgb(221, 224, 226);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFFDE4, rgb(241, 249, 255));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFDE4, rgb(221, 236, 250)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #landing-content > div:active    {
     font-weight: bold;
-    background: #005AA7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(221, 224, 226);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFFDE4, rgb(241, 249, 255));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFDE4, rgb(221, 236, 250)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+#about-page-wrapper {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    padding: 0 1em;
+    border: 5px double black;
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#about-content header {
+    text-align: center; 
+    font: 5em sans-serif; 
+    margin: .5em 0; 
+    color: yellow;
+}
+
+#about-content p   {
+    font-size: 1.2em;
+    font-family: sans-serif;
+    text-align:center;
+    color:white;
+    margin: .3em 0;
+}
+
+#p-2::after {
+    color:greenyellow;
+    font-size: 1.2em;
+    content:' =)';
+}
+
