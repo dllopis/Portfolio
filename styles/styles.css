@@ -17,15 +17,11 @@
     display:flex;
     flex-direction:column;
     min-height:100vh;
-    border:7px double black;
-    border-color: yellowgreen;
 }
 
 #landing-image  {
     flex:10;
-    border:1px solid black;
     background: url('../images/ninja-2.png') no-repeat; /* fallback */
-    background: url('../images/ninja-2.png') no-repeat, linear-gradient(to right, #FFFFFF, #FFEFBA);
     background-size:contain;
     background-position: center;
 
@@ -34,17 +30,16 @@
 #landing-content    {
     flex:1;
     display:flex;
-    border:1px solid black;
     flex-direction: column;
     justify-content: center;
     align-items:center;
     background: #F7971E;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to top, #FFFDE4, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFDE4, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #landing-content > div   {
-    width:60%;
+    width:75%;
     padding: 0 .5em;
     margin: 0 .5em .5em;
     border: 5px double black;
@@ -80,7 +75,6 @@
     align-items: center;
     min-height:100vh;
     padding: 0 1em;
-    border: 5px double black;
     background: #005AA7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -101,7 +95,7 @@
 }
 
 #p-2::after {
-    color:greenyellow;
+    color:yellowgreen;
     font-size: 1.2em;
     content:' =)';
 }
@@ -109,14 +103,23 @@
 #demo-projects-wrapper  {
     display:flex;
     flex-direction: column;
-    border: 7px double black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     min-height: 100vh;
     padding: .5em;
     background: #005AA7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to top, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, rgb(224, 223, 208), #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#demo-content, #java-content, #octocat-content    {
+#demo-content{
+    flex:1;
+}
+    
+#java-content{
+    flex:1;
+}
+#octocat-content    {
     flex:1;
 }
 .project  {
@@ -127,6 +130,10 @@
 
 a:link  {
     text-decoration: none;
+    color: blue;
+}
+a:visited   {
+    color: blue;
 }
 a:hover   {
     color:white;
