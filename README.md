@@ -15,5 +15,6 @@ Portfolio website created with HTML/CSS/Javascript
 
 ## 7/9/2019
 *   Created Demo | Project section
+*   Added re-directs to divs to go to certain sections.
 *   Progress thus far is only for mobile screens.
 *   Media query for all screens will be implemented once mobile is done.
