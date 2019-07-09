@@ -106,3 +106,34 @@
     content:' =)';
 }
 
+#demo-projects-wrapper  {
+    display:flex;
+    flex-direction: column;
+    border: 7px double black;
+    min-height: 100vh;
+    padding: .5em;
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, rgb(224, 223, 208), #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#demo-content, #java-content, #octocat-content    {
+    flex:1;
+}
+.project  {
+    text-decoration: none;
+    margin-bottom: .5em;
+    color:white;
+}
+
+a:link  {
+    text-decoration: none;
+}
+a:hover   {
+    color:white;
+}
+a:active  {
+    color: rgb(60, 255, 0);
+}
+.octocat-image   {
+    max-width: 100%;
+}
