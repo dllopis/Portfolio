@@ -173,6 +173,7 @@
 #logo-bar   {
     display: flex;
     flex:3;
+    padding: 1em 0;
     border:5px double white;
     border-radius:10%;
     flex-direction: column;
