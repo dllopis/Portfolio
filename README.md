@@ -25,3 +25,7 @@ Portfolio website created with HTML/CSS/Javascript
 *   Media Queries next for larger screen sizes
 *   Possibly add dynamic content by swapping sections to view with Javascript
     instead of scrolling the page.
+
+## 7/12/2019
+*   Added media query for larger displays
+*   Need to add media query for tablets and landscape orientations
