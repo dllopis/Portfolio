@@ -24,7 +24,7 @@
 #landing-content-wrapper  {
     display:flex;
     flex-direction:column;
-    height:100vh;
+    min-height:100vh;
 }
 #about-content-wrapper {
     display:flex;
@@ -50,7 +50,7 @@
 #contact-content-wrapper    {
     display:flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     background: #005AA7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, rgb(224, 223, 208), #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -58,7 +58,7 @@
 
 /* landing section */
 #landing-image  {
-    flex: 6;
+    flex: 1;
     background: url('../images/ninja-2.png') no-repeat; /* fallback */
     background-size:contain;
     background-position: center;
