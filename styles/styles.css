@@ -25,7 +25,6 @@
     display:flex;
     flex-direction:column;
     min-height:100vh;
-    z-index:2;
 }
 #about-content-wrapper {
     display:flex;
@@ -59,7 +58,7 @@
 
 /* landing section */
 #landing-image  {
-    flex:3;
+    flex:10;
     background: url('../images/ninja-2.png') no-repeat; /* fallback */
     background-size:contain;
     background-position: center;
@@ -131,6 +130,7 @@
 #demo-content{
     /* border:5px solid red; */
     flex:1;
+    padding: 1em 0;
 }   
 #java-content{
     /* border:5px solid white; */
@@ -146,7 +146,7 @@
 
 /* Contact content section */
 #contact-content    {
-    flex:6;
+    flex:1;
     display:flex;
     flex-direction: column;
     text-align: center;
