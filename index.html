@@ -10,88 +10,129 @@
 </head>
 
 <body>
-    <div id="landing-page-wrapper">
+<div id="page">
+    <div id="landing-content-wrapper">
         <div id="landing-image"></div>
-            <div id="landing-content">
-                <div onclick="location.href='#about-page-wrapper'">About Me</div>
-                <div onclick="location.href='#demo-content-wrapper'">Demos | Projects</div>
-                <!-- <div><a href="#resume-content">Resume</a></div>
-                <div><a href="#contact-content">Contact Me</a></div> -->
-            </div>
+        <div id="landing-content">
+            <div onclick="location.href='#about-content-wrapper'">About Me</div>
+            <div onclick="location.href='#demo-content-wrapper'">Demos | Projects</div>
+            <div onclick="location.href='#contact-content-wrapper'">Contact Me</a></div>
         </div>
     </div>
-        
-    <div id="about-page-wrapper">
+
+    <div id="about-content-wrapper">
         <div id="about-content">
             <header>Hey, I'm Dennis!</header>
             <main>
                 <section>
-                    <p>I'm an aspiring Software Engineer with an avid interest in learning new technologies 
-                    and connecting with people to build great relationships.</p>
+                    <p>I'm an aspiring Software Engineer with an avid interest in learning new technologies
+                        and connecting with people to build great relationships.</p>
 
                     <p style="font: 2em sans-serif; color:yellow"><strong>I love to code</strong></p>
-                        <p>Whether it's solving problems on LeetCode or tackling new projects to add to my skill set, 
-                        you can be sure to catch me on a laptop or a keyboard glued to my hands...</p>
+                    <p>Whether it's solving problems on LeetCode or tackling new projects to add to my skill set,
+                        you can be sure to catch me on a laptop or with a keyboard glued to my hands...</p>
 
-                    <p id="p-2" style="font: 2em sans-serif; color:yellow"><strong>Oh ... and I'm human too</strong><span id="smiley">=)</span></p>
-                        <p>I enjoy a nice cold foamy dark draft or a delicious can of Pepsi!
-                        Have a look around and feel free to connect with me.</p>  
+                    <p id="p-2" style="font: 2em sans-serif; color:yellow"><strong>Oh ... and I'm human
+                            too</strong><span id="smiley">=)</span></p>
+                    <p>I enjoy a nice cold foamy dark draft or a delicious can of Pepsi!
+                        Have a look around and feel free to connect with me.</p>
             </main>
-        </div> 
+        </div>
     </div>
 
     <div id="demo-content-wrapper">
         <div id="demo-content">
             <header style="font: 2em sans serif;color: yellow">Live Demo Links</header>
-            <p style="margin-bottom: 1em;font: 1.1em sans serif;color: aquamarine">Summer Series of Code with 
+            <p style="margin-bottom: 1em;font: 1.1em sans serif;color: aquamarine">Summer Series of Code with
                 <a href="https://codecorgi.co"><strong>Codecorgi</strong></a>
             </p>
 
             <div class="project">
                 <a href="https://codecorgi-challenge-0-carousel.netlify.com/">
-                <h3>Challenge-0: Image-Carousel</h3></a>
+                    <h3>Challenge-0: Image-Carousel</h3>
+                </a>
                 <p class="description">Implement rotation of images for landing page.</p>
             </div>
 
             <div class="project">
                 <a href="https://codecorgi-challenge-1-functional-prototype.netlify.com/">
-                <h3>Challenge-1: Functional-Prototype</h3></a>
+                    <h3>Challenge-1: Functional-Prototype</h3>
+                </a>
                 <p class="description">Build a working prototype of a mock-up design.</p>
             </div>
 
             <div class="project">
                 <a href="https://codecorgi-challenge-2-list-repos.netlify.com/">
-                <h3>Challenge-2: List-Repo</h3></a>
+                    <h3>Challenge-2: List-Repo</h3>
+                </a>
                 <p class="description">Fetch Github users repositories sorted by recency.</p>
             </div>
         </div>
 
         <div id="java-content">
-                <header style="font: 2em sans serif;color: yellow">Java Coding Links</header>
-                <p style="margin-bottom: 1em;font: 1.3em sans serif;color: aquamarine">Solving coding exercises for fun
-                </p>
-                <div class="project">
-                    <a href="https://github.com/dllopis/LeetCode/tree/master/src">
-                    <h3>LeetCode</h3></a>
-                    <p class="description">Solved Easy/medium problems.</p>
-                </div>
-    
-                <div class="project">
-                    <a href="https://github.com/dllopis/CodeSignal/tree/master/src">
-                    <h3>CodeSignal</h3></a>
-                    <p class="description">Completed arcade mode and other problems.</p>
-                </div>
-    
-                <div class="project">
-                    <a href="https://github.com/dllopis/Firecode.io/tree/master/Firecode.io/src/solutions">
-                    <h3>Firecode.io</h3></a>
-                    <p class="description">5 levels of difficulty | Progression learning.</p>
-                </div>
+            <header style="font: 2em sans serif;color: yellow">Java Coding Links</header>
+            <p style="margin-bottom: 1em;font: 1.3em sans serif;color: aquamarine">Solving coding exercises for fun
+            </p>
+            <div class="project">
+                <a href="https://github.com/dllopis/LeetCode/tree/master/src">
+                    <h3>LeetCode</h3>
+                </a>
+                <p class="description">Solved Easy/medium problems.</p>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/dllopis/CodeSignal/tree/master/src">
+                    <h3>CodeSignal</h3>
+                </a>
+                <p class="description">Completed arcade mode and other problems.</p>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/dllopis/Firecode.io/tree/master/Firecode.io/src/solutions">
+                    <h3>Firecode.io</h3>
+                </a>
+                <p class="description">5 levels of difficulty | Progression learning.</p>
+            </div>
         </div>
         <div id="octocat-content">
-            <img class="octocat-image" src="./images/Octocat.png">
+            <img class="image-content" src="./images/Octocat.png">
             <p class="description">GitHub Profile: <a href="https://GitHub.com/dllopis/">dllopis</a></p>
+        </div>
     </div>
+
+    <div id="contact-content-wrapper">
+        
+        <div id="contact-content">
+            <div id="contact-section-a">
+                <h1 class="header-h1">Looking to connect?</h1>
+                <p>Tap on the Gmail or LinkedIn icons.</p>
+            </div>
+
+            <div id="contact-section-b">
+                <h1 class="header-h1">Check out what I'm working on!</h1>
+                <p>Tap on the GitHub icon.</p>
+            </div>
+
+            <div id="logo-bar">
+                <div class="logo-icons">
+                    <a href="https://GitHub.com/dllopis"><img class="image-content" src="./images/Octocat.png"></a>
+                    <p class="description" style="color:white">GitHub Profile: dllopis</p>
+                </div>
+                <div class="logo-icons">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dllopis16@gmail.com&su=SUBJECT&body=BODY">
+                        <img class="image-content" src="./images/gmail-icon.png">
+                    </a>
+                    <p class="description" style="color:white">Gmail: dllopis16@gmail.com</p>
+                </div>
+                <div class="logo-icons">
+                    <a href="https://www.linkedin.com/in/dennisllopis/"><img class="image-content" src="./images/In-Icon.png"></a>
+                    <p class="description" style="color:white">LinkedIn: dennisllopis</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="empty-div"></div>
+</div>
 </body>
 
 </html>
