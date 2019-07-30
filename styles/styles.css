@@ -24,7 +24,11 @@
 #landing-content-wrapper  {
     display:flex;
     flex-direction:column;
+    align-items: center;
     min-height:100vh;
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #about-content-wrapper {
     display:flex;
@@ -58,24 +62,25 @@
 
 /* landing section */
 #landing-image  {
-    flex:10;
-    background: url('../images/ninja-2.png') no-repeat; /* fallback */
-    background-size:contain;
-    background-position: center;
+    flex:1;
+}
+#landing-image > img    {
+    border: 7px double black;
+    border-radius: 100%;
+    background-color: white;
+    height: 150px;
 }
 #landing-content    {
-    flex:1;
+    flex:3;
     display:flex;
     padding: 1em;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    background: #005AA7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 #landing-content > div   {
-    width:75%;
+    width:100%;
     padding: 0 .5em;
     margin: 0 .5em .5em;
     border: 5px double black;
@@ -218,15 +223,22 @@ a:active  {
   
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-    #landing-content-wrapper  {
-        flex-direction: row;
-        background: #005AA7;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-    #landing-image  {
-        flex:2;
-    }
+#landing-content-wrapper  {
+    flex-direction: column;
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+    /* landing section */
+#landing-image  {
+    flex:1;
+}
+#landing-image > img    {
+    border: 7px double black;
+    border-radius: 100%;
+    background-color: white;
+    height: 200px;
+}
     #about-content-wrapper  {
         background-color: white;
     }
