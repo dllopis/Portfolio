@@ -1,144 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-</head>
-
-<body>
-<div id="page">
-    <div id="landing-content-wrapper">
-        <div id=landing-info>
-            <h1>Dennis LLopis</h1>
-            <h2>SOFTWARE ENGINEER</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dennis LLopis - Portfolio</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <script src="assets/scripts/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="hero-wrapper">
+        <div id="hero-image"></div>
+        <div id="hero-name">
+          <header><h1>Dennis LLopis</h1></header>
         </div>
-        <div id ="landing-image"><img src="images/me.png"></div>
-        <div id="landing-content">
-            <div onclick="location.href='#about-content-wrapper'">About Me</div>
-            <div onclick="location.href='#demo-content-wrapper'">Portfolio</div>
-            <div onclick="location.href='#contact-content-wrapper'">Contact Me</a></div>
+        <div id="hero-links">
+          <ul>
+            <li>
+              <img
+                id="github-icon"
+                src="assets/images/Octocat.png"
+                alt="GitHub Profile"
+              />
+              <a href="https://github.com/dllopis" target="_blank">dllopis</a>
+            </li>
+            <li>
+              <img
+                id="linkedin-icon"
+                src="assets/images/In-Icon.png"
+                alt="LinkedIn Profile"
+              />
+              <a
+                href="https://www.linkedin.com/in/dennisllopis/ "
+                target="_blank"
+                >dennisllopis</a
+              >
+            </li>
+            <li>
+              <img
+                id="gmail-icon"
+                src="assets/images/gmail-icon.png"
+                alt="Gmail"
+              />
+              <a id="email-link">dllopis16@gmail.com</a>
+            </li>
+            <li>
+              <button onclick="copyToClipboard('#email-link')">
+                Copy to clipboard
+              </button>
+            </li>
+          </ul>
         </div>
-        
-        
+      </div>
     </div>
-
-    <div id="about-content-wrapper">
-        <div id="about-content">
-            <div><p>Hi, I'm Dennis, I'm an aspiring Software Engineer living in the New York City area. 
-                    I have an avid interest in learning new technologies
-                    and connecting with people to build great relationships.</p>
-            </div>
-                    
-            <div><p style="font-size: 1.7;font-family: 'Trebuchet MS';color:yellow"><strong>I love to <Span style="color:white">CODE</Span></strong></p>
-                <p>Whether it's solving problems on LeetCode or tackling new projects to add to my skill set,
-                    you can be sure to catch me scribbling away on my whiteboard and enjoying some music.</p>
-            </div>
-
-            <div><p style="font-size: 1.7;font-family: 'Trebuchet MS';color:yellow"><strong>Oh ... and I'm human too =)</strong></p>
-                <p>I enjoy a nice foamy dark draft or a delicious can of Pepsi! I'm into gaming, 
-                    playing handball with my friends, Anime, asian cuisine, and spending time with my girlfriend.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="demo-content-wrapper">
-        <div id="demo-content">
-            <header style="font: 2em sans serif;color: yellow">Live Demo Links</header>
-            <p style="margin-bottom: 1em;font: 1.1em sans serif;color: aquamarine">Summer Series of Code with
-                <a href="https://codecorgi.co"><strong>Codecorgi</strong></a>
-            </p>
-
-            <div class="project">
-                <a href="https://codecorgi-challenge-0-carousel.netlify.com/">
-                    <h3>Challenge-0: Image-Carousel</h3>
-                </a>
-                <p class="description">Implement rotation of images for landing page.</p>
-            </div>
-
-            <div class="project">
-                <a href="https://codecorgi-challenge-1-functional-prototype.netlify.com/">
-                    <h3>Challenge-1: Functional-Prototype</h3>
-                </a>
-                <p class="description">Build a working prototype of a mock-up design.</p>
-            </div>
-
-            <div class="project">
-                <a href="https://codecorgi-challenge-2-list-repos.netlify.com/">
-                    <h3>Challenge-2: List-Repo</h3>
-                </a>
-                <p class="description">Fetch Github users repositories sorted by recency.</p>
-            </div>
-        </div>
-
-        <div id="java-content">
-            <header style="font: 2em sans serif;color: yellow">Java Coding Links</header>
-            <p style="margin-bottom: 1em;font: 1.3em sans serif;color: aquamarine">Solving coding exercises for fun
-            </p>
-            <div class="project">
-                <a href="https://github.com/dllopis/LeetCode/tree/master/src">
-                    <h3>LeetCode</h3>
-                </a>
-                <p class="description">Solved Easy/medium problems.</p>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/dllopis/CodeSignal/tree/master/src">
-                    <h3>CodeSignal</h3>
-                </a>
-                <p class="description">Completed arcade mode and other problems.</p>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/dllopis/Firecode.io/tree/master/Firecode.io/src/solutions">
-                    <h3>Firecode.io</h3>
-                </a>
-                <p class="description">5 levels of difficulty | Progression learning.</p>
-            </div>
-        </div>
-        <div id="octocat-content">
-            <img class="image-content" src="./images/Octocat.png">
-            <p class="description">GitHub Profile: <a href="https://GitHub.com/dllopis/">dllopis</a></p>
-        </div>
-    </div>
-
-    <div id="contact-content-wrapper">
-        <div id="contact-content">
-            <div id="contact-section-a">
-                <h1 class="header-h1">Looking to connect?</h1>
-                <p style="padding:.5em 0;font: 1.1em sans-serif;color: blueviolet;">Tap on the Gmail or LinkedIn icons.</p>
-                <p class="p-text">I'm looking for an opportunity to join a great team!
-                    I'm devoted, hardworking, and very sociable.
-                    If you would like to get together to work on a project
-                    or chat with me, please feel free to contact me!
-                </p>
-            </div>
-
-            <div id="contact-section-b">
-            </div>
-
-            <div id="logo-bar">
-                <div class="logo-icons">
-                    <a href="https://GitHub.com/dllopis"><img class="image-content" src="./images/Octocat.png"></a>
-                    <p class="description" style="color:white">GitHub Profile: dllopis</p>
-                </div>
-                <div class="logo-icons">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dllopis16@gmail.com&su=SUBJECT&body=BODY">
-                        <img class="image-content" src="./images/gmail-icon.png">
-                    </a>
-                    <p class="description" style="color:white">Gmail: dllopis16@gmail.com</p>
-                </div>
-                <div class="logo-icons">
-                    <a href="https://www.linkedin.com/in/dennisllopis/"><img class="image-content" src="./images/In-Icon.png"></a>
-                    <p class="description" style="color:white">LinkedIn: dennisllopis</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
-
+  </body>
 </html>
