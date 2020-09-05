@@ -40,7 +40,7 @@ body {
   border: 5px double #000000;
   border-radius: 10px;
   box-shadow: 5px 10px #888888;
-  background-image: url('https://raw.githubusercontent.com/dllopis/Portfolio/master/assets/images/dllopis.png');
+  background-image: url('../images/dllopis.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
