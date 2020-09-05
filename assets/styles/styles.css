@@ -34,8 +34,11 @@ body {
 }
 
 #hero-image {
+  background-image: url('/assets/images/dllopis.png');
+  background-repeat: no-repeat;
+  background-size: contain;
   margin: 20px;
-  width: 275px;
+  width: 225px;
   height: 225px;
   border: 5px double #000000;
   border-radius: 10px;
