@@ -5,7 +5,7 @@
 }
 html {
   height: 100vh;
-  font-size: 62.5%;
+  font-size: 1.1rem;
 }
 body {
   height: 100%;
@@ -23,9 +23,6 @@ body {
 }
 
 #hero-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   background-color: lavender;
   border: 5px double black;
@@ -34,24 +31,24 @@ body {
 }
 
 #hero-image {
-  width: 225px;
-  height: 225px;
-  margin: 20px;
-  border: 5px double #000000;
+  border: 3px double #000000;
   border-radius: 10px;
-  box-shadow: 5px 10px #888888;
-  background-image: url('../images/dllopis.png');
+  display:block;
+  
+  /* background-image: url('../images/dllopis.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
+}
+#hero-img {
+  max-width:100%;
+  max-height:100%;
+  vertical-align: top;
 }
 #hero-name {
-  margin: 10px;
-  padding: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
 #hero-name h1 {
-  font-size: 3rem;
 }
 #hero-links {
   /* background-color: white; */
@@ -59,16 +56,15 @@ body {
 }
 #hero-links ul {
   display: block;
-  font-size: 2.5rem;
   list-style-type: none;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 #hero-links li {
   text-decoration: none;
   padding: 4px;
 
-  text-align: center;
+  text-align: left;
   cursor: pointer;
 }
 a {
@@ -86,8 +82,8 @@ a:active {
 } /* Selected link   */
 
 li:hover {
-  border-bottom: 3px solid rgb(253, 218, 64);
-  border-top: 3px solid red;
+  border-bottom: 1px solid rgb(253, 218, 64);
+  border-top: 1px solid red;
   border-radius: 10px;
   background-color: rgb(77, 118, 255);
 }
@@ -101,4 +97,26 @@ li:active {
 #gmail-icon {
   width: 32px;
   height: 32px;
+}
+
+@media (min-width: 43em){
+  html {
+    font-size: 1rem;
+  }
+  #hero-wrapper { display: flex;}
+  #hero-image {flex:1 0 25%;} 
+  #hero-name { flex: 1 0 35%; }
+  #hero-links { flex: 1 0 25%; } 
+}
+
+@media (min-width: 62em)  {
+  #hero-wrapper { display: flex; }
+  #hero-image {flex:1 0 25%;  }
+  #hero-img {
+    max-width:100%;
+    max-height:100%;
+  } 
+  #hero-image {flex:1 0 15%;} 
+  #hero-name { flex: 1 0 30%; font-size: 1.5rem }
+  #hero-links { flex: 1 0 35%; font-size: 1.5rem; }  
 }
