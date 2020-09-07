@@ -6,7 +6,6 @@ function copyToClipboard(element) {
     $("body").append($temp);
     $temp.val($(element).text()).select();
     document.execCommand("copy");
-    
-    alert('Email address ' + '[ dllopis16@gmail.com ]' + ' has been copied to clipboard.');
+    alert('Email address ' + 'dllopis16@gmail.com' + ' has been copied to clipboard.');
     $temp.remove();
   }

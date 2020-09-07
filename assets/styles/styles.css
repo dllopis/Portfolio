@@ -5,7 +5,7 @@
 }
 html {
   height: 100vh;
-  font-size: 1.1rem;
+  font-size: 100%;
 }
 body {
   height: 100%;
@@ -49,6 +49,7 @@ body {
   text-align: center;
 }
 #hero-name h1 {
+  font-size: 2rem;
 }
 #hero-links {
   /* background-color: white; */
@@ -56,16 +57,17 @@ body {
 }
 #hero-links ul {
   display: block;
+  padding: 10px;
   list-style-type: none;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 #hero-links li {
   text-decoration: none;
-  padding: 4px;
-
+  padding: 10px;
   text-align: left;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 a {
   color: inherit;
@@ -95,27 +97,39 @@ li:active {
 #github-icon,
 #linkedin-icon,
 #gmail-icon {
-  width: 32px;
-  height: 32px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 @media (min-width: 43em){
-  html {
-    font-size: 1rem;
-  }
   #hero-wrapper { display: flex;}
-  #hero-image {flex:1 0 25%;} 
+  #hero-image {flex:1 0 25%; } 
+  #hero-name > header > h1 {
+    font-size:2rem;
+  }
   #hero-name { flex: 1 0 35%; }
   #hero-links { flex: 1 0 25%; } 
 }
 
 @media (min-width: 62em)  {
-  #hero-wrapper { display: flex; }
+  html{
+    font-size: 100%;
+  }
+  body {
+    height: 100%;
+    background-image: url('../images/wallpaper-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #hero-wrapper { display: flex;}
   #hero-image {flex:1 0 25%;  }
   #hero-img {
     max-width:100%;
     max-height:100%;
   } 
+  #hero-name > header > h1 {
+    font-size:3.5rem;
+  }
   #hero-image {flex:1 0 15%;} 
   #hero-name { flex: 1 0 30%; font-size: 1.5rem }
   #hero-links { flex: 1 0 35%; font-size: 1.5rem; }  
